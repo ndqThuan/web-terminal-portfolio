@@ -36,7 +36,7 @@ function terminalApp() {
         `;
 
          const commands = {
-            ls: `
+            help: `
                 <div">
                     ${inputWithCommand}
                     <p> 
@@ -276,6 +276,7 @@ function terminalApp() {
          // The visitors usually use "fb" command to check my Facebook profile instead of "facebook" command
          // This is to make their life easier when checking my portfolio
          const aliases = {
+            ls: "help",
             about: "whois",
             fb: "facebook",
             mail: "email",
@@ -297,7 +298,7 @@ function terminalApp() {
             `<div>
                 ${inputWithCommand}
                 <p class="help-command">Command not found: <span style="font-weight:500;color:var(--danger)">${command}</span></p>
-                <p class="help-command">See \`ls\` for more info</p>
+                <p class="help-command">See \`help\` for more info</p>
                 <br>
             </div>`
          );
