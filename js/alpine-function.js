@@ -1,7 +1,7 @@
 function terminalApp() {
    return {
       command: "", // recently submited command
-      output: "", // output result html base on command
+      output: "", // return html based on command
       history: [], // store the history of all commands
 
       runCommand() {
@@ -24,7 +24,7 @@ function terminalApp() {
       },
 
       getCommandResult(command) {
-         // The terminal will always return the input form with the previous command
+         // The terminal will always return the input element with previous command
          // This is the most used element so imma create a seperate variable for it
          const inputWithCommand = `
             <form>
@@ -42,7 +42,7 @@ function terminalApp() {
                     <p> 
                     <div style="display: flex; justify-content: space-between;">
                         <p style="font-weight: bold;">whois</p>
-                        <p>Who dis NDQ Thuan? (It's me!)</p>
+                        <p>Who's NDQ Thuan? (It's me!)</p>
                     </div>
                     <div style="display: flex; justify-content: space-between;">
                         <p style="font-weight: bold;">whoami</p>
@@ -132,7 +132,7 @@ function terminalApp() {
                     <div class="command">
                         <b style="color:var(--secondary)">Terminal Style Web Portfolio</b> - <b>HTML, CSS, JavaScript, AlpineJS</b>
                         <p class=" meaning">This website is built with AlpineJS, which is basically JavaScript on a diet. 
-                        Perfect for my portfolio, since I want to keep it simple and lightweight ;)
+                        Perfect for my portfolio, since I want to keep it light and simple ;)
                         </p>
                     </div>
                     <div class="command">
@@ -273,11 +273,16 @@ function terminalApp() {
             `,
          };
 
-         // The visitors usually use "fb" command to check my Facebook profile instead of "facebook" command
+         // The visitors usually use "fb" command to check my Facebook profile instead of the full "facebook" command
          // This is to make their life easier when checking my portfolio
          const aliases = {
+            // Users experienced with terminal might type "ls" command for the full list
+            // This is just my personal preference
             ls: "help",
+
+            // Also my preference ;p
             about: "whois",
+
             fb: "facebook",
             mail: "email",
             git: "github",
@@ -288,13 +293,13 @@ function terminalApp() {
          if (aliases[command]) {
             command = aliases[command];
          } else if (command.split(" ").includes("sudo")) {
-            // Just a hidden easter egg to see if anyone tries to "sudo" my web xD
+            // Just a hidden easter egg to see if anyone tries to "sudo" my web
             command = "sudo";
          }
 
          return (
             commands[command] ||
-            // Non-existent command will be notified
+            // Non-existent commands will be notified
             `<div>
                 ${inputWithCommand}
                 <p class="help-command">Command not found: <span style="font-weight:500;color:var(--danger)">${command}</span></p>
