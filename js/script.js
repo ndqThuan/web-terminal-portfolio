@@ -8,7 +8,7 @@ setInterval(() => {
    if (visible) {
       inputElement.setAttribute("placeholder", "");
    } else {
-      inputElement.setAttribute("placeholder", "Enter a command here");
+      inputElement.setAttribute("placeholder", "Enter commands here");
    }
    visible = !visible;
 }, 1000);

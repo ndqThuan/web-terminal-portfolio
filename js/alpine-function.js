@@ -1,3 +1,6 @@
+// If you ask me why "AlpineJS" and not pure JS or JQuery
+// The answer is "I just feel like it"
+
 function terminalApp() {
    return {
       command: "", // recently submited command
@@ -87,7 +90,7 @@ function terminalApp() {
                     Java and Golang are my programming languages of choice, and I love challenges that make my brain do flips 
                     (in a good way!). <br>
 
-                    Right now, I'm on a kick building blazing-fast websites with H.U.G.O for my blogging adventures. ✍️ <br>
+                    Right now, I'm on a kick building blazing-fast websites with H.U.G.O for my blogging adventures because of my overloaded passion. ✍️ <br>
                     </p>
                     <br>
                 </div>
@@ -131,8 +134,8 @@ function terminalApp() {
                     <h3>My Projects</h3>
                     <div class="command">
                         <b style="color:var(--secondary)">Terminal Style Web Portfolio</b> - <b>HTML, CSS, JavaScript, AlpineJS</b>
-                        <p class=" meaning">This website is built with AlpineJS, which is basically JavaScript on a diet. 
-                        Perfect for my portfolio, since I want to keep it light and simple ;)
+                        <p class=" meaning">This website is built with AlpineJS, which is 
+                        perfect for my portfolio, since I want to keep it light and simple ;)
                         </p>
                     </div>
                     <div class="command">
@@ -247,7 +250,7 @@ function terminalApp() {
                 <div>
                     ${inputWithCommand}
                     <p>I'm fine with using <a class="meaning" href="https://t.me/ndq_thuan" target="_blank">my Telegram</a> 
-                        for contacting. I'm not really active there, so don't expect me to reply soon.
+                        for works. I'm not really active there, so don't expect me to reply soon.
                     </p>
                     <br>
                 </div>
