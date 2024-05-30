@@ -44,35 +44,35 @@ function terminalApp() {
                     ${inputWithCommand}
                     <p> 
                     <div style="display: flex; justify-content: space-between;">
-                        <p style="font-weight: bold;">whois</p>
+                        <b>whois</b>
                         <p>Who's NDQ Thuan? (It's me!)</p>
                     </div>
                     <div style="display: flex; justify-content: space-between;">
-                        <p style="font-weight: bold;">whoami</p>
+                        <b>whoami</b>
                         <p>Who are YOU?</p>
                     </div>
                     <div style="display: flex; justify-content: space-between;">
-                        <p style="font-weight: bold;">skill</p>
+                        <b>skill</b>
                         <p>My Tech Toolkit</p>
                     </div>
                     <div style="display: flex; justify-content: space-between;">
-                        <p style="font-weight: bold;">project</p>
+                        <b>project</b>
                         <p>Check out what I've built!</p>
                     </div>
                     <div style="display: flex; justify-content: space-between;">
-                        <p style="font-weight: bold;">resume</p>
+                        <b>resume</b>
                         <p>Wanna see my resume?</p>
                     </div>
                     <div style="display: flex; justify-content: space-between;">
-                        <p style="font-weight: bold;">contact</p>
+                        <b>contact</b>
                         <p>Let's chat!</p>
                     </div>
                     <div style="display: flex; justify-content: space-between;">
-                        <p style="font-weight: bold;">clear</p>
+                        <b>clear</b>
                         <p>Fresh start</p>
                     </div>
                     <br>
-                    <div class="command">Type one of the above to view. For eg.
+                    <div>Type one of the above to view. For eg.
                         <span style="color: var(--secondary)">resume</span>
                     </div>
                     </p>
@@ -84,7 +84,7 @@ function terminalApp() {
                 <div>
                     ${inputWithCommand}
                     <p>
-                    <span style="font-weight:bold;">Hey there!</span> I'm Quoc Thuan, 
+                    <b>Hey there!</b> I'm Quoc Thuan, 
                     a 22-year-old backend developer newbie with a coding itch I gotta scratch. <br>
 
                     Java and Golang are my programming languages of choice, and I love challenges that make my brain do flips 
@@ -121,7 +121,7 @@ function terminalApp() {
                         Version control with <span style="color: var(--secondary)">Git</span>? Easy peasy. 
                         <span style="color: var(--secondary)">Testing</span> and <span style="color: var(--secondary)">cloud storage</span>? No sweat!  <br>
                         Oh, and did I mention my 
-                        <a class="meaning" href="toeic-certificate.pdf" target="_blank">TOEIC</a> score of 970? Communication is a superpower too!
+                        <a class="meaning" href="toeic-certificate.pdf" target="_blank">TOEIC</a> score of <b>970</b>? Communication is a superpower too!
                     </p>
                     <br>
                 </div>
@@ -132,29 +132,31 @@ function terminalApp() {
                     ${inputWithCommand}
                     <p>
                     <h3>My Projects</h3>
-                    <div class="command">
+                    <div>
                         <b style="color:var(--secondary)">Terminal Style Web Portfolio</b> - <b>HTML, CSS, JavaScript, AlpineJS</b>
                         <p class=" meaning">This website is built with AlpineJS, which is 
                         perfect for my portfolio, since I want to keep it light and simple ;)
                         </p>
                     </div>
-                    <div class="command">
+                    <div>
                         <b style="color:var(--secondary)">Automatic Data
                             Processing System</b> - <b>SpringBoot, Apache POI</b>
                         <p class=" meaning">Unlock coconut power! This system auto-magically cleans BenTre Coconut's Shopee orders, 
                         spitting out clear reports straight to your email. 
                         Now you can spend less time on spreadsheets, more time on coconuts!!!</p>
                     </div>
-                    <div class="command">
+                    <div>
                         <a href="https://github.com/ndqThuan/edc-koko" target="_blank">
-                            <b class="command">EDCKOKO E-commerce Store</b></a>
-                                - <b>SpringBoot, MySQL, Redis, Azure Blob Storage, HTMX, Thymeleaf</b>
+                            <b>EDCKOKO E-commerce Store</b>
+                        </a>
+                        - <b>SpringBoot, MySQL, Redis, Azure Blob Storage, HTMX, Thymeleaf</b>
                         <p class="meaning">Calling all adventurers! This web app I built lets you gear up for any trip with ease. 
                         It's your one-stop shop for top-notch camping tools and everyday carry essentials.</p>
                     </div>
-                    <div class="command">
+                    <div>
                         <a href="https://github.com/ThuanNDQ/Syncio" target="_blank">
-                            <b class="command">Syncio - Social Media Software</b></a> - <b>Java Swing, MongoDB</b>
+                            <b>Syncio - Social Media Software</b>
+                        </a> - <b>Java Swing, MongoDB</b>
                         <p class="meaning">Built a social media app where you can connect with friends, share updates, 
                         and message like a pro. I even tackled the messaging system solo, showing off my Java and MongoDB skills.</p>
                     </div>
